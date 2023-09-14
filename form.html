@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        article {
+            grid-column: 2;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label{
+            color: beige;
+        }
+
+        body {
+            background-image: radial-gradient(circle, rgb(38, 107, 124), rgb(43, 41, 167), rgb(63, 0, 63));
+        }
+    </style>
+</head>
+
+<body>
+    <main class="layout">
+        <article>
+            <form>
+            <input type="text" placeholder="ESCREVA SEU NOME AQUI" style="margin-top: 30px;">
+
+            <label for="data" style="margin-top: 30px;">DATA MAIS IMPORTANTE DA SUA VIDA:</label>
+            <input type="date" id="data">
+
+            <input type="checkbox" name="" id="chk1" style="margin-top: 30px;">
+            <label for="chk1">HOMEM</label>
+            <input type="checkbox" name="" id="chk2">
+            <label for="chk2">MULHER</label>
+            <input type="checkbox" name="" id="chk3">
+            <label for="chk3">ESTRANHO</label>
+
+            <input type="email" placeholder="EMAIL DE CONTATO" style="margin-top: 30px;">
+
+            <input type="url" placeholder="LINK DO VIDEO FAVORITO" style="margin-top: 30px;">
+
+            <label for="arquivo" style="margin-top: 30px;">ARQUIVO SUSPEITO NO FUNDO DA SUA MAQUINA:</label>
+            <input type="file" id="arquivo">
+
+            <input type="password" placeholder="SENHA QUE VOCÊ NÃO PODE ESQUECER" style="margin-top: 30px;">
+
+            <input type="submit" placeholder="CONFIRMAR DADOS" style="margin-top: 30px;">
+        </form>
+        </article>
+    </main>
+</body>
+
+</html>
